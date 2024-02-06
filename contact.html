@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/master.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:wght@200;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <section class="page">
+        <header>
+            <nav>
+                <div class="logo">&lt;A&gt;</div>
+                <div class="toggle-icon"><i class="fa-solid fa-bars"></i></div>
+                <ul class="links">
+                    <li><a class="home" href="index.html">Home</a></li>
+                    <li><a class="portfolio" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="active contact" href="contact.html">Contact</a></li>
+                    <li class="cv"><a
+                            href=https://drive.google.com/uc?export=download&id=1CWm6UczEo90-2zWOB_9j4MsPlKY92j62
+                            download="Ahmed-Adel-Resume">Download Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contact-page">
+            <div class="contact-container">
+                <div class="text">
+                    <h2>Get In Touch</h2>
+                    <p>Feel free to reach out to me using the contact form below or through
+                        the provided email address.</p>
+                    <br>
+                    <span class="soon">I will make sure to respond to your inquiry as soon aspossible.</span>
+                </div>
+                <form id="myForm" action="https://formspree.io/f/mnqejapp" method="POST">
+                    <input class="name" type="text" placeholder="Your Name" name="name" required>
+                    <input class="email" type="email" placeholder="Your Email" name="_replyto">
+                    <textarea class="message" name="message" placeholder="Write A Message"></textarea>
+                    <input type="submit" value="Send" class="submit" name="send">
+                </form>
+                <span class="thanks">Thank you for your interest!</span>
+            </div>
+        </section>
+        <footer>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/ahmed-adel-232272283/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:ahmedadel.enginner1@gmail.com" target="_blank"><i
+                        class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/AhmedAdel700" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://telegram.me/Ahmed_Web_Adel" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100058786266217&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </footer>
+        <!-- <script>
+            // Get the form element
+            const form = document.getElementById('myForm');
+
+            // Add submit event listener to the form
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+
+                // Get form values
+                const name = form.querySelector('.name').value;
+                const email = form.querySelector('.email').value;
+                const message = form.querySelector('.message').value;
+
+                // Create an object with form data
+                const formData = {
+                    name: name,
+                    _replyto: email,
+                    message: message
+                };
+
+                // Send the form data to Formspree using Axios
+                axios.post('https://formspree.io/ahmedadel.engineer1@gmail.com', formData)
+                    .then(function (response) {
+                        // Form submission successful
+                        console.log(response);
+                        alert('Message sent successfully!');
+                    })
+                    .catch(function (error) {
+                        // Form submission failed
+                        console.log(error);
+                        alert('Failed to send message. Please try again later.');
+                    });
+            });
+        </script> -->
+        <script src="Master.JS/master.js"></script>
+</body>
+
+</html>
